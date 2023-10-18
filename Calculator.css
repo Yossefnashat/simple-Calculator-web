@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.style{
+    background-color: darkblue;
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    height: 80vh;
+    width: 80vw;
+    background-color: darkblue;
+    padding: 5px;
+}
+.calculator *{
+    width: 100%;
+}
+h1{
+    margin: 4px 0 ;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    height: fit-content;
+}
+input{
+    outline: none;
+    border: none;
+    height: 20%;
+    font-size: 5vh ;
+    padding-left: 2px;
+}
+.placeholder{
+    background-color: white;
+    color: grey;
+    padding-left: 2px;
+    margin-bottom: 5px;
+    font-size: 4vh;
+}
+.del_buttons{
+    display: flex;
+    height: 10vh;
+}
+.AC{
+    background-color: orange;
+    width: 200%;
+}
+.del{
+    background-color: red;
+}
+.main_buttons{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(4 , 10vh);
+}
+.main_buttons button {
+    background-color: grey;
+    width: 97.5%;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 2px;
+    color: white;
+    font-size: 3vh;
+}
+button:active{
+    background-color: green;
+}
